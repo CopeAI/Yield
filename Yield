@@ -8352,6 +8352,7 @@ addcmd('spoofspeed',{'spoofws','spoofwalkspeed'},function(args, speaker)
 		if hookmetamethod then
 			local char = speaker.Character
 			local setspeed;
+			--[[
 			local index; index = hookmetamethod(game, "__index", function(self, key)
 				local keyclean = key:gsub("\0", "")
 				if (keyclean == "WalkSpeed" or keyclean == "walkSpeed") and self:IsA("Humanoid") and self:IsDescendantOf(char) and not checkcaller() then
@@ -8367,6 +8368,26 @@ addcmd('spoofspeed',{'spoofws','spoofwalkspeed'},function(args, speaker)
 				end
 				return newindex(self, key, value)
 			end)
+		    ]]
+			local MetaTable = getrawmetatable(game); setreadonly(MetaTable, false)
+            local oldindex = clonefunction(MetaTable.__index)
+            local oldnewindex = clonefunction(MetaTable.__newindex)
+            rawset(MetaTable,"__index", function(self, key) 
+                if not checkcaller() then
+                    if key == "WalkSpeed" and self:IsDescendantOf(char) then 
+                        return setspeed or args[1]
+                    end 
+                end
+                return oldindex(self, key) 
+            end)
+            rawset(MetaTable,"__newindex", function(self, key, value) 
+                if not checkcaller() then
+                    if key == "WalkSpeed" and self:IsDescendantOf(char) then 
+            			return tonumber(value)
+                    end 
+                end
+                return oldnewindex(self, key, value) 
+            end)
 		else
 			notify('Incompatible Exploit','Your exploit does not support this command (missing hookmetamethod)')
 		end
