@@ -5694,7 +5694,7 @@ end)
 
 addcmd('remotespy',{'rspy'},function(args, speaker)
 	notify("Loading",'Hold on a sec')
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CopeAI/Yield/refs/heads/main/Spy"))()
 end)
 
 addcmd('chat',{'say'},function(args, speaker)
