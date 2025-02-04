@@ -331,7 +331,7 @@ CloseImage.BackgroundColor3 = Color3.new(1, 1, 1)
 CloseImage.BackgroundTransparency = 1
 CloseImage.Position = UDim2.new(0, 5, 0, 5)
 CloseImage.Size = UDim2.new(0, 10, 0, 10)
-CloseImage.Image = "rbxassetid://5054663650"
+--CloseImage.Image = "rbxassetid://5054663650"
 CloseImage.ZIndex = 10
 
 PinButton.Name = "PinButton"
@@ -347,7 +347,7 @@ PinImage.BackgroundTransparency = 1
 PinImage.Position = UDim2.new(0, 3, 0, 3)
 PinImage.Size = UDim2.new(0, 14, 0, 14)
 PinImage.ZIndex = 10
-PinImage.Image = "rbxassetid://6234691350"
+--PinImage.Image = "rbxassetid://6234691350"
 
 Tooltip.Name = randomString()
 Tooltip.Parent = PARENT
@@ -498,7 +498,7 @@ ExitImage_2.BackgroundTransparency = 1
 ExitImage_2.Position = UDim2.new(0, 5, 0, 5)
 ExitImage_2.Size = UDim2.new(0, 10, 0, 10)
 ExitImage_2.ZIndex = 10
-ExitImage_2.Image = "rbxassetid://5054663650"
+--ExitImage_2.Image = "rbxassetid://5054663650"
 
 PositionsFrame.Name = "PositionsFrame"
 PositionsFrame.Parent = Settings
@@ -819,7 +819,7 @@ Img.Parent = background_3
 Img.BackgroundTransparency = 1
 Img.Position = UDim2.new(0, 242, 0, 3)
 Img.Size = UDim2.new(0, 100, 0, 95)
-Img.Image = "rbxassetid://4113050383"
+--Img.Image = "rbxassetid://4113050383"
 Img.ZIndex = 10
 
 AddPlugin.Name = "AddPlugin"
@@ -1035,7 +1035,7 @@ ExitImage_5.BackgroundColor3 = Color3.new(1, 1, 1)
 ExitImage_5.BackgroundTransparency = 1
 ExitImage_5.Position = UDim2.new(0, 5, 0, 5)
 ExitImage_5.Size = UDim2.new(0, 10, 0, 10)
-ExitImage_5.Image = "rbxassetid://5054663650"
+--ExitImage_5.Image = "rbxassetid://5054663650"
 ExitImage_5.ZIndex = 10
 
 logs.Name = randomString()
@@ -1068,7 +1068,7 @@ ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel.BackgroundTransparency = 1
 ImageLabel.Position = UDim2.new(0, 3, 0, 3)
 ImageLabel.Size = UDim2.new(0, 14, 0, 14)
-ImageLabel.Image = "rbxassetid://2406617031"
+--ImageLabel.Image = "rbxassetid://2406617031"
 ImageLabel.ZIndex = 10
 
 PopupText.Name = "PopupText"
@@ -1096,7 +1096,7 @@ ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel_2.BackgroundTransparency = 1
 ImageLabel_2.Position = UDim2.new(0, 5, 0, 5)
 ImageLabel_2.Size = UDim2.new(0, 10, 0, 10)
-ImageLabel_2.Image = "rbxassetid://5054663650"
+--ImageLabel_2.Image = "rbxassetid://5054663650"
 ImageLabel_2.ZIndex = 10
 
 background.Name = "background"
@@ -1634,7 +1634,7 @@ eventEditor = (function()
 		{2,"Frame",{BackgroundColor3=currentShade2,BorderSizePixel=0,Name="TopBar",Parent={1},Size=UDim2.new(1,0,0,20),ZIndex=10,}},
 		{3,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Title",Parent={2},Position=UDim2.new(0,0,0,0),Size=UDim2.new(1,0,0.95,0),Text="Event Editor",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=Enum.TextXAlignment.Center,ZIndex=10,}},
 		{4,"TextButton",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Close",Parent={2},Position=UDim2.new(1,-20,0,0),Size=UDim2.new(0,20,0,20),Text="",TextColor3=Color3.new(1,1,1),TextSize=14,ZIndex=10,}},
-		{5,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="rbxassetid://5054663650",Parent={4},Position=UDim2.new(0,5,0,5),Size=UDim2.new(0,10,0,10),ZIndex=10,}},
+		{5,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,--[[Image="rbxassetid://5054663650",]]Parent={4},Position=UDim2.new(0,5,0,5),Size=UDim2.new(0,10,0,10),ZIndex=10,}},
 		{6,"Frame",{BackgroundColor3=currentShade1,BorderSizePixel=0,Name="Content",Parent={1},Position=UDim2.new(0,0,0,20),Size=UDim2.new(1,0,0,202),ZIndex=10,}},
 		{7,"ScrollingFrame",{BackgroundColor3=Color3.new(0.14117647707462,0.14117647707462,0.14509804546833),BackgroundTransparency=1,BorderColor3=Color3.new(0.15686275064945,0.15686275064945,0.15686275064945),BorderSizePixel=0,BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png",CanvasSize=UDim2.new(0,0,0,100),Name="List",Parent={6},Position=UDim2.new(0,5,0,5),ScrollBarImageColor3=Color3.new(0.30588236451149,0.30588236451149,0.3098039329052),ScrollBarThickness=8,Size=UDim2.new(1,-10,1,-10),TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png",ZIndex=10,}},
 		{8,"Frame",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Name="Holder",Parent={7},Size=UDim2.new(1,0,1,0),ZIndex=10,}},
@@ -1690,7 +1690,7 @@ eventEditor = (function()
 		{50,"TextBox",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,ClearTextOnFocus=false,Font=3,Parent={49},PlaceholderColor3=Color3.new(1,1,1),Position=UDim2.new(0,5,0,0),Size=UDim2.new(1,-45,0,20),Text="a\\b\\c\\d",TextColor3=currentText1,TextSize=14,TextXAlignment=0,ZIndex=10,}},
 		{51,"TextButton",{BackgroundColor3=currentShade1,BorderSizePixel=0,Font=3,Name="Delete",Parent={49},Position=UDim2.new(1,-20,0,0),Size=UDim2.new(0,20,0,20),Text="X",TextColor3=Color3.new(1,1,1),TextSize=18,ZIndex=10,}},
 		{52,"TextButton",{BackgroundColor3=currentShade1,BorderSizePixel=0,Font=3,Name="Settings",Parent={49},Position=UDim2.new(1,-40,0,0),Size=UDim2.new(0,20,0,20),Text="",TextColor3=Color3.new(1,1,1),TextSize=18,ZIndex=10,}},
-		{53,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="rbxassetid://1204397029",Parent={52},Position=UDim2.new(0,2,0,2),Size=UDim2.new(0,16,0,16),ZIndex=10,}},
+		{53,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,--[[Image="rbxassetid://1204397029",]]Parent={52},Position=UDim2.new(0,2,0,2),Size=UDim2.new(0,16,0,16),ZIndex=10,}},
 	})
 	main.Name = randomString()
 	local mainFrame = main:WaitForChild("Content")
@@ -2108,7 +2108,7 @@ reference = (function()
 		{2,"Frame",{BackgroundColor3=Color3.new(0.1803921610117,0.1803921610117,0.1843137294054),BorderSizePixel=0,Name="TopBar",Parent={1},Size=UDim2.new(1,0,0,20),ZIndex=10,}},
 		{3,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Title",Parent={2},Size=UDim2.new(1,0,0.94999998807907,0),Text="Reference",TextColor3=Color3.new(1,1,1),TextSize=14,ZIndex=10,}},
 		{4,"TextButton",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Close",Parent={2},Position=UDim2.new(1,-20,0,0),Size=UDim2.new(0,20,0,20),Text="",TextColor3=Color3.new(1,1,1),TextSize=14,ZIndex=10,}},
-		{5,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="rbxassetid://5054663650",Parent={4},Position=UDim2.new(0,5,0,5),Size=UDim2.new(0,10,0,10),ZIndex=10,}},
+		{5,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,--[[Image="rbxassetid://5054663650",]]Parent={4},Position=UDim2.new(0,5,0,5),Size=UDim2.new(0,10,0,10),ZIndex=10,}},
 		{6,"Frame",{BackgroundColor3=Color3.new(0.14117647707462,0.14117647707462,0.14509804546833),BorderSizePixel=0,Name="Content",Parent={1},Position=UDim2.new(0,0,0,20),Size=UDim2.new(1,0,0,300),ZIndex=10,}},
 		{7,"ScrollingFrame",{BackgroundColor3=Color3.new(0.14117647707462,0.14117647707462,0.14509804546833),BackgroundTransparency=1,BorderColor3=Color3.new(0.15686275064945,0.15686275064945,0.15686275064945),BorderSizePixel=0,BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png",CanvasSize=UDim2.new(0,0,0,1313),Name="List",Parent={6},ScrollBarImageColor3=Color3.new(0.30588236451149,0.30588236451149,0.3098039329052),ScrollBarThickness=8,Size=UDim2.new(1,0,1,0),TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png",VerticalScrollBarInset=2,ZIndex=10,}},
 		{8,"UIListLayout",{Parent={7},SortOrder=2,}},
@@ -2371,7 +2371,7 @@ createPopup = function(text)
     ExitImage.BackgroundTransparency = 1
     ExitImage.Position = UDim2.new(0, 5, 0, 5)
     ExitImage.Size = UDim2.new(0, 10, 0, 10)
-    ExitImage.Image = "rbxassetid://5054663650"
+    --ExitImage.Image = "rbxassetid://5054663650"
     ExitImage.ZIndex = 10
 
     Exit.MouseButton1Click:Connect(function()
@@ -5715,303 +5715,6 @@ end)
 addcmd('remotespy',{'spy'},function(args, speaker)
 	notify("Loading",'Hold on a sec')
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CopeAI/Yield/refs/heads/main/Spy"))()
-end)
-
-addcmd('chat',{'say'},function(args, speaker)
-	local cString = getstring(1)
-	chatMessage(cString)
-end)
-
-
-spamming = false
-spamspeed = 1
-addcmd('spam',{},function(args, speaker)
-	spamming = true
-	local spamstring = getstring(1)
-	repeat wait(spamspeed)
-		chatMessage(spamstring)
-	until spamming == false
-end)
-
-addcmd('nospam',{'unspam'},function(args, speaker)
-	spamming = false
-end)
-
-addcmd('whisper',{'pm'},function(args, speaker)
-	local players = getPlayer(args[1], speaker)
-	for i,v in pairs(players)do
-		task.spawn(function()
-			local plrName = Players[v].Name
-			local pmstring = getstring(2)
-			chatMessage("/w "..plrName.." "..pmstring)
-		end)
-	end
-end)
-
-pmspamming = {}
-addcmd('pmspam',{},function(args, speaker)
-	local players = getPlayer(args[1], speaker)
-	for i,v in pairs(players)do
-		task.spawn(function()
-			local plrName = Players[v].Name
-			if FindInTable(pmspamming, plrName) then return end
-			table.insert(pmspamming, plrName)
-			local pmspamstring = getstring(2)
-			repeat
-				if Players:FindFirstChild(v) then
-					wait(spamspeed)
-					chatMessage("/w "..plrName.." "..pmspamstring)
-				else
-					for a,b in pairs(pmspamming) do if b == plrName then table.remove(pmspamming, a) end end
-				end
-			until not FindInTable(pmspamming, plrName)
-		end)
-	end
-end)
-
-addcmd('nopmspam',{'unpmspam'},function(args, speaker)
-	local players = getPlayer(args[1], speaker)
-	for i,v in pairs(players)do
-		task.spawn(function()
-			for a,b in pairs(pmspamming) do
-				if b == Players[v].Name then
-					table.remove(pmspamming, a)
-				end
-			end
-		end)
-	end
-end)
-
-addcmd('spamspeed',{},function(args, speaker)
-	local speed = args[1] or 1
-	if isNumber(speed) then
-		spamspeed = speed
-	end
-end)
-
-
-addcmd('blockhead',{},function(args, speaker)
-	speaker.Character.Head:FindFirstChildOfClass("SpecialMesh"):Destroy()
-end)
-
-addcmd('blockhats',{},function(args, speaker)
-	for _,v in pairs(speaker.Character:FindFirstChildOfClass('Humanoid'):GetAccessories()) do
-		for i,c in pairs(v:GetDescendants()) do
-			if c:IsA("SpecialMesh") then
-				c:Destroy()
-			end
-		end
-	end
-end)
-
-addcmd('blocktool',{},function(args, speaker)
-	for _,v in pairs(speaker.Character:GetChildren()) do
-		if v:IsA("Tool") or v:IsA("HopperBin") then
-			for i,c in pairs(v:GetDescendants()) do
-				if c:IsA("SpecialMesh") then
-					c:Destroy()
-				end
-			end
-		end
-	end
-end)
-
-addcmd('creeper',{},function(args, speaker)
-	if r15(speaker) then
-		speaker.Character.Head:FindFirstChildOfClass("SpecialMesh"):Destroy()
-		speaker.Character.LeftUpperArm:Destroy()
-		speaker.Character.RightUpperArm:Destroy()
-		speaker.Character:FindFirstChildOfClass("Humanoid"):RemoveAccessories()
-	else
-		speaker.Character.Head:FindFirstChildOfClass("SpecialMesh"):Destroy()
-		speaker.Character["Left Arm"]:Destroy()
-		speaker.Character["Right Arm"]:Destroy()
-		speaker.Character:FindFirstChildOfClass("Humanoid"):RemoveAccessories()
-	end
-end)
-
-function getTorso(x)
-	x = x or Players.LocalPlayer.Character
-	return x:FindFirstChild("Torso") or x:FindFirstChild("UpperTorso") or x:FindFirstChild("LowerTorso") or x:FindFirstChild("HumanoidRootPart")
-end
-
-addcmd("bang", {"rape"}, function(args, speaker)
-	execCmd("unbang")
-	wait()
-	local humanoid = speaker.Character:FindFirstChildWhichIsA("Humanoid")
-	bangAnim = Instance.new("Animation")
-	bangAnim.AnimationId = not r15(speaker) and "rbxassetid://148840371" or "rbxassetid://5918726674"
-	bang = humanoid:LoadAnimation(bangAnim)
-	bang:Play(0.1, 1, 1)
-	bang:AdjustSpeed(args[2] or 3)
-	bangDied = humanoid.Died:Connect(function()
-		bang:Stop()
-		bangAnim:Destroy()
-		bangDied:Disconnect()
-		bangLoop:Disconnect()
-	end)
-	if args[1] then
-		local players = getPlayer(args[1], speaker)
-		for _, v in pairs(players) do
-			local bangplr = Players[v].Name
-			local bangOffet = CFrame.new(0, 0, 1.1)
-			bangLoop = RunService.Stepped:Connect(function()
-				pcall(function()
-					local otherRoot = getTorso(Players[bangplr].Character)
-					getRoot(speaker.Character).CFrame = otherRoot.CFrame * bangOffet
-				end)
-			end)
-		end
-	end
-end)
-
-addcmd("unbang", {"unrape"}, function(args, speaker)
-	if bangDied then
-		bangDied:Disconnect()
-		bang:Stop()
-		bangAnim:Destroy()
-		bangLoop:Disconnect()
-	end
-end)
-
-addcmd('carpet',{},function(args, speaker)
-	if not r15(speaker) then
-		execCmd('uncarpet')
-		wait()
-		local players = getPlayer(args[1], speaker)
-		for i,v in pairs(players)do
-			carpetAnim = Instance.new("Animation")
-			carpetAnim.AnimationId = "rbxassetid://282574440"
-			carpet = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(carpetAnim)
-			carpet:Play(.1, 1, 1)
-			local carpetplr = Players[v].Name
-			carpetDied = speaker.Character:FindFirstChildOfClass'Humanoid'.Died:Connect(function()
-				carpetLoop:Disconnect()
-				carpet:Stop()
-				carpetAnim:Destroy()
-				carpetDied:Disconnect()
-			end)
-			carpetLoop = RunService.Heartbeat:Connect(function()
-				pcall(function()
-					getRoot(Players.LocalPlayer.Character).CFrame = getRoot(Players[carpetplr].Character).CFrame
-				end)
-			end)
-		end
-	else
-		notify('R6 Required','This command requires the r6 rig type')
-	end
-end)
-
-addcmd('uncarpet',{'nocarpet'},function(args, speaker)
-	if carpetLoop then
-		carpetLoop:Disconnect()
-		carpetDied:Disconnect()
-		carpet:Stop()
-		carpetAnim:Destroy()
-	end
-end)
-
-addcmd('friend',{},function(args, speaker)
-	local players = getPlayer(args[1], speaker)
-	for i,v in pairs(players)do
-		speaker:RequestFriendship(v)
-	end
-end)
-
-addcmd('unfriend',{},function(args, speaker)
-	local players = getPlayer(args[1], speaker)
-	for i,v in pairs(players)do
-		speaker:RevokeFriendship(v)
-	end
-end)
-
-addcmd('bringpart',{},function(args, speaker)
-	for i,v in pairs(workspace:GetDescendants()) do
-		if v.Name:lower() == getstring(1):lower() and v:IsA("BasePart") then
-			v.CFrame = getRoot(speaker.Character).CFrame
-		end
-	end
-end)
-
-addcmd('bringpartclass',{'bpc'},function(args, speaker)
-	for i,v in pairs(workspace:GetDescendants()) do
-		if v.ClassName:lower() == getstring(1):lower() and v:IsA("BasePart") then
-			v.CFrame = getRoot(speaker.Character).CFrame
-		end
-	end
-end)
-
-gotopartDelay = 0.1
-addcmd('gotopart',{'topart'},function(args, speaker)
-	for i,v in pairs(workspace:GetDescendants()) do
-		if v.Name:lower() == getstring(1):lower() and v:IsA("BasePart") then
-			if speaker.Character:FindFirstChildOfClass('Humanoid') and speaker.Character:FindFirstChildOfClass('Humanoid').SeatPart then
-				speaker.Character:FindFirstChildOfClass('Humanoid').Sit = false
-				wait(.1)
-			end
-			wait(gotopartDelay)
-			getRoot(speaker.Character).CFrame = v.CFrame
-		end
-	end
-end)
-
-addcmd('tweengotopart',{'tgotopart','ttopart'},function(args, speaker)
-	for i,v in pairs(workspace:GetDescendants()) do
-		if v.Name:lower() == getstring(1):lower() and v:IsA("BasePart") then
-			if speaker.Character:FindFirstChildOfClass('Humanoid') and speaker.Character:FindFirstChildOfClass('Humanoid').SeatPart then
-				speaker.Character:FindFirstChildOfClass('Humanoid').Sit = false
-				wait(.1)
-			end
-			wait(gotopartDelay)
-			TweenService:Create(getRoot(speaker.Character), TweenInfo.new(tweenSpeed, Enum.EasingStyle.Linear), {CFrame = v.CFrame}):Play()
-		end
-	end
-end)
-
-addcmd('gotopartclass',{'gpc'},function(args, speaker)
-	for i,v in pairs(workspace:GetDescendants()) do
-		if v.ClassName:lower() == getstring(1):lower() and v:IsA("BasePart") then
-			if speaker.Character:FindFirstChildOfClass('Humanoid') and speaker.Character:FindFirstChildOfClass('Humanoid').SeatPart then
-				speaker.Character:FindFirstChildOfClass('Humanoid').Sit = false
-				wait(.1)
-			end
-			wait(gotopartDelay)
-			getRoot(speaker.Character).CFrame = v.CFrame
-		end
-	end
-end)
-
-addcmd('gotomodel',{'tomodel'},function(args, speaker)
-	for i,v in pairs(workspace:GetDescendants()) do
-		if v.Name:lower() == getstring(1):lower() and v:IsA("Model") then
-			if speaker.Character:FindFirstChildOfClass('Humanoid') and speaker.Character:FindFirstChildOfClass('Humanoid').SeatPart then
-				speaker.Character:FindFirstChildOfClass('Humanoid').Sit = false
-				wait(.1)
-			end
-			wait(gotopartDelay)
-			getRoot(speaker.Character).CFrame = v:GetModelCFrame()
-		end
-	end
-end)
-
-addcmd('tweengotomodel',{'tgotomodel','ttomodel'},function(args, speaker)
-	for i,v in pairs(workspace:GetDescendants()) do
-		if v.Name:lower() == getstring(1):lower() and v:IsA("Model") then
-			if speaker.Character:FindFirstChildOfClass('Humanoid') and speaker.Character:FindFirstChildOfClass('Humanoid').SeatPart then
-				speaker.Character:FindFirstChildOfClass('Humanoid').Sit = false
-				wait(.1)
-			end
-			wait(gotopartDelay)
-			TweenService:Create(getRoot(speaker.Character), TweenInfo.new(tweenSpeed, Enum.EasingStyle.Linear), {CFrame = v:GetModelCFrame()}):Play()
-		end
-	end
-end)
-
-addcmd('gotopartdelay',{},function(args, speaker)
-	local gtpDelay = args[1] or 0.1
-	if isNumber(gtpDelay) then
-		gotopartDelay = gtpDelay
-	end
 end)
 
 addcmd('noclickdetectorlimits',{'nocdlimits','removecdlimits'},function(args, speaker)
