@@ -3278,6 +3278,8 @@ CMDs[#CMDs + 1] = {NAME = 'logs', DESC = 'Opens the logs GUI'}
 CMDs[#CMDs + 1] = {NAME = 'chatlogs / clogs', DESC = 'Log what people say or whisper'}
 CMDs[#CMDs + 1] = {NAME = 'joinlogs / jlogs', DESC = 'Log when people join'}
 CMDs[#CMDs + 1] = {NAME = 'antichatlogs / antichatlogger', DESC = 'Prevents Roblox from banning you for your silly chat messages (game needs the legacy chat)'}
+CMDs[#CMDs + 1] = {NAME = 'firstp', DESC = 'Forces camera to go into first person'}
+CMDs[#CMDs + 1] = {NAME = 'thirdp', DESC = 'Allows camera to go into third person'}
 CMDs[#CMDs + 1] = {NAME = 'esp', DESC = 'View all players and their status'}
 CMDs[#CMDs + 1] = {NAME = 'noesp / unesp', DESC = 'Removes esp'}
 CMDs[#CMDs + 1] = {NAME = 'esptransparency [number]', DESC = 'Changes the transparency of esp related commands'}
@@ -6212,6 +6214,14 @@ addcmd('touchinterests', {'touchinterest', 'firetouchinterests', 'firetouchinter
 			end
 		end
 	end
+end)
+
+addcmd('firstp',{},function(args, speaker)
+	speaker.CameraMode = "LockFirstPerson"
+end)
+
+addcmd('thirdp',{},function(args, speaker)
+	speaker.CameraMode = "Classic"
 end)
 
 addcmd('fullbright',{'fb','fullbrightness'},function(args, speaker)
