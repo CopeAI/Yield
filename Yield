@@ -5489,10 +5489,10 @@ addcmd('tptool', {'teleporttool'}, function(args, speaker)
 	TpTool.Activated:Connect(function()
 		local Char = speaker.Character or workspace:FindFirstChild(speaker.Name)
 		local HRP = Char and Char:FindFirstChild("HumanoidRootPart")
-		if not Char or not HRP then
-			return warn("Failed to find HumanoidRootPart")
-		end
-		HRP.CFrame = CFrame.new(IYMouse.Hit.X, IYMouse.Hit.Y + 3, IYMouse.Hit.Z, select(4, HRP.CFrame:components()))
+		local Humanoid = Char and Char:FindFirstChildOfClass("Humanoid")
+		if not Char or not HRP or not Humanoid then return end
+		local TargPos = Humanoid.TargetPoint
+		HRP.CFrame = CFrame.new(TargPos.X, TargPos.Y + 3, TargPos.Z, select(4, HRP.CFrame:components()))
 	end)
 end)
 
