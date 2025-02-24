@@ -5119,7 +5119,6 @@ end)
 
 viewing = nil
 addcmd('view',{'spectate'},function(args, speaker)
-	StopFreecam()
 	local players = getPlayer(args[1], speaker)
 	for i,v in pairs(players) do
 		if viewDied then
@@ -5142,7 +5141,6 @@ addcmd('view',{'spectate'},function(args, speaker)
 end)
 
 addcmd('unview',{'unspectate'},function(args, speaker)
-	StopFreecam()
 	if viewing ~= nil then
 		viewing = nil
 		notify('Spectate','View turned off')
