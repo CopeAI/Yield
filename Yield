@@ -3286,6 +3286,7 @@ CMDs[#CMDs + 1] = {NAME = 'esptransparency [number]', DESC = 'Changes the transp
 CMDs[#CMDs + 1] = {NAME = 'locate [player]', DESC = 'View a single player and their status'}
 CMDs[#CMDs + 1] = {NAME = 'unlocate / nolocate [player]', DESC = 'Removes locate'}
 CMDs[#CMDs + 1] = {NAME = 'spectate / view [player]', DESC = 'View a player'}
+CMDs[#CMDs + 1] = {NAME = 'unspectate / unview [player]', DESC = 'UnView a player'}
 CMDs[#CMDs + 1] = {NAME = 'gotomodel [part name]', DESC = 'Moves your character to a model or multiple models'}
 CMDs[#CMDs + 1] = {NAME = 'fireclickdetectors / firecd [name]', DESC = 'Uses all click detectors in a game or uses the optional name'}
 CMDs[#CMDs + 1] = {NAME = 'firetouchinterests / touchinterests [name]', DESC = 'Uses all touchinterests in a game or uses the optional name'}
