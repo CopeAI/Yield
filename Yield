@@ -5710,7 +5710,15 @@ end)
 
 addcmd('explorer', {'dex'}, function(args, speaker)
 	notify('Loading', 'Hold on a sec')
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+	local Actor = game.ReplicatedFirst:FindFirstChildWhichIsA("Actor", true) or Instance.new("Actor", game.ReplicatedFirst)
+	local TestScript = Actor:FindFirstChildWhichIsA("LocalScript") or Instance.new("LocalScript", Actor)
+	if game:FindFirstChildWhichIsA("Actor", true) and #game:FindFirstChildWhichIsA("Actor", true):children() > 0 then
+		print("Found", game:FindFirstChildWhichIsA("Actor", true):GetFullName())
+		local f = Instance.new("Folder", game.CoreGui.RobloxGui)
+		f.Name = "DexHost"
+		run_on_thread(getactorthreads()[1], "local in_actor = true;\n\n" .. game:HttpGet("https://raw.githubusercontent.com/FaithfulAC/universal-stuff/main/true-secure-dex.lua"))
+	end
+	--loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
 end)
 
 addcmd('remotespy',{'spy'},function(args, speaker)
