@@ -3241,7 +3241,8 @@ function autoComplete(str,curText)
 end
 
 CMDs = {}
-CMDs[#CMDs + 1] = {NAME = 'explorer / dex', DESC = 'Opens DEX by Moon'}
+CMDs[#CMDs + 1] = {NAME = 'explorer / dex', DESC = 'Undetected'}
+CMDs[#CMDs + 1] = {NAME = 'oldexplorer / olddex', DESC = 'Detected'}
 CMDs[#CMDs + 1] = {NAME = 'remotespy / rspy', DESC = 'Opens Simple Spy V3'}
 CMDs[#CMDs + 1] = {NAME = 'datalimit [num]', DESC = 'Set outgoing KBPS limit'}
 CMDs[#CMDs + 1] = {NAME = 'replicationlag / backtrack [num]', DESC = 'Set IncomingReplicationLag'}
@@ -5713,14 +5714,16 @@ addcmd('explorer', {'dex'}, function(args, speaker)
 	local Actor = game.ReplicatedFirst:FindFirstChildWhichIsA("Actor", true) or Instance.new("Actor", game.ReplicatedFirst)
 	local TestScript = Actor:FindFirstChildWhichIsA("LocalScript") or Instance.new("LocalScript", Actor)
 	if game:FindFirstChildWhichIsA("Actor", true) and #game:FindFirstChildWhichIsA("Actor", true):children() > 0 then
-		print("Found", game:FindFirstChildWhichIsA("Actor", true):GetFullName())
 		local f = Instance.new("Folder", game.CoreGui.RobloxGui)
 		f.Name = "DexHost"
 		run_on_thread(getactorthreads()[1], "local in_actor = true;\n\n" .. game:HttpGet("https://raw.githubusercontent.com/FaithfulAC/universal-stuff/main/true-secure-dex.lua"))
 	end
 	--loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
 end)
-
+addcmd('oldexplorer', {'olddex'}, function(args, speaker)
+	notify('Loading', 'Hold on a sec')
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+end)
 addcmd('remotespy',{'spy'},function(args, speaker)
 	notify("Loading",'Hold on a sec')
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CopeAI/Yield/refs/heads/main/Spy"))()
