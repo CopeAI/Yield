@@ -5470,12 +5470,13 @@ end)
 
 local AntiLockConnection = nil
 addcmd('antilock',{},function(args, speaker)
+	local Down = args[1] or -20
 	if AntiLockConnection == nil then
 		AntiLockConnection = RunService.Heartbeat:Connect(function()
 			local Char = speaker.Character
 			if Char and Char.PrimaryPart then
 				local OldVelo = Char.PrimaryPart.Velocity
-				Char.PrimaryPart.Velocity = Vector3.new(0,-20,0)
+				Char.PrimaryPart.Velocity = Vector3.new(0,Down,0)
 				RunService.RenderStepped:Wait()
 				Char.PrimaryPart.Velocity = OldVelo
 			end
